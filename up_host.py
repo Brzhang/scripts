@@ -45,8 +45,8 @@ if __name__ == '__main__':
     if not hosts:
         hosts.append('127.0.0.1    localhost')
 
-    conn = httplib.HTTPConnection('www.360kb.com')
-    conn.request('GET', '/kb/2_122.html')
+    conn = httplib.HTTPSConnection('raw.githubusercontent.com')
+    conn.request('GET', '/racaljk/hosts/master/hosts')
     r = conn.getresponse()
     if r.status != 200:
         print("Failed to get response, status: %d -- %s\n"%(

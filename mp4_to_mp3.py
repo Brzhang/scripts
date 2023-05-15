@@ -56,5 +56,5 @@ if __name__ == '__main__':
     input_dir = sys.argv[1]
     output_dir = sys.argv[1]
     if len(sys.argv) == 3:
-        output_dir = sys.args[2]
+        output_dir = sys.argv[2]
     convert_mp4_mp3(input_dir, output_dir)
